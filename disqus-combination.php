@@ -1,5 +1,6 @@
 <?php
-/* Plugin Name: Disqus Combination Widget By Tricks Panda
+/*
+Plugin Name: Combination Widget For Disqus
 Plugin URI: http://www.trickspanda.com
 Description: Add a Disqus combination widget to your WordPress blog's sidebar
 Version: 1.0
