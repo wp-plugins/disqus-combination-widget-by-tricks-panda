@@ -192,7 +192,7 @@ name="<?php
         
         echo $before_widget;
         echo $before_title;
-	echo $instance['title'];
+        echo $instance['title'];
         echo $after_title;
         
         $title           = $instance['title'];
