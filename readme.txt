@@ -3,7 +3,7 @@ Plugin URI: http://www.trickspanda.com
 Description: Add a Disqus combination widget to your WordPress blog's sidebar.
 Version: 1.1
 Requires at least: 2.5
-Tested up to: 3.9
+Tested up to: 4.0
 Contributors: hardeepasrani
 Author URI: http://www.hardeepasrani.com
 Tags: disqus, comments, widgets, recent comments, popular threads, top commenters
