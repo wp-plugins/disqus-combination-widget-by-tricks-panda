@@ -210,4 +210,12 @@ name="<?php
 
 add_action('widgets_init', create_function('', 'return register_widget("tp_disquscombination");'));
 
+function tp_action_init()
+{
+    // Localization
+    load_plugin_textdomain('tp_disquscombination', false, dirname(plugin_basename(__FILE__)) . '/translation/');
+}
+
+// Add actions
+add_action('init', 'tp_action_init');
 ?>
