@@ -3,7 +3,7 @@
 Plugin Name: Combination Widget For Disqus
 Plugin URI: http://www.trickspanda.com
 Description: Add a Disqus combination widget to your WordPress blog's sidebar
-Version: 1.1
+Version: 1.2
 Author: Hardeep Asrani
 Author URI: http://www.hardeepasrani.com
 */
@@ -14,10 +14,10 @@ class tp_disquscombination extends WP_Widget
     {
         $widget_ops = array(
             'classname' => 'tp_disquscombination',
-            'description' => 'Add Disqus combination widget to WordPress sidebar.'
+            'description' => __( 'Add Disqus combination widget to WordPress sidebar', 'tp_disquscombination')
         );
         
-        $this->WP_Widget('tp_disquscombination', 'Disqus Combination Widget', $widget_ops);
+        $this->WP_Widget('tp_disquscombination', __('Disqus Combination Widget', 'tp_disquscombination'), $widget_ops);
     }
     
     function form($instance)
@@ -31,9 +31,9 @@ class tp_disquscombination extends WP_Widget
 
 <p>
 <label for="<?php
-        echo $this->get_field_id('title');
+        echo $this->get_field_id('title'); 
 ?>">
-Title:
+<?php _e( 'Title:', 'tp_disquscombination'); ?>
 <br/>
 <input id="<?php
         echo $this->get_field_id('title');
@@ -48,7 +48,7 @@ name="<?php
 <label for="<?php
         echo $this->get_field_id('siteid');
 ?>">
-Disqus Site ID:
+<?php _e( 'Disqus Site ID:', 'tp_disquscombination'); ?>
 <br/>
 <input id="<?php
         echo $this->get_field_id('siteid');
@@ -63,7 +63,7 @@ name="<?php
 <label for="<?php
         echo $this->get_field_id('itemnumbers');
 ?>">
-Number of Items:
+<?php _e( 'Number Of Items:', 'tp_disquscombination'); ?>
 <br/>
 <input id="<?php
         echo $this->get_field_id('itemnumbers');
@@ -78,7 +78,7 @@ name="<?php
 <label for="<?php
         echo $this->get_field_id('taboption');
 ?>">
-Default Tab:
+<?php _e( 'Default Tab:', 'tp_disquscombination'); ?>
 <br/>
 <select id="<?php
         echo $this->get_field_id('taboption');
@@ -88,22 +88,22 @@ Default Tab:
   <option value="people" <?php
         if ($instance['taboption'] == people)
             echo 'selected="selected"';
-?>>People</option>
+?>><?php _e( 'People', 'tp_disquscombination'); ?></option>
   <option value="recent" <?php
         if ($instance['taboption'] == recent)
             echo 'selected="selected"';
-?>>Recent</option>
+?>><?php _e( 'Recent', 'tp_disquscombination'); ?></option>
   <option value="popular" <?php
         if ($instance['taboption'] == popular)
             echo 'selected="selected"';
-?>>Popular</option>
+?>><?php _e( 'Popular', 'tp_disquscombination'); ?></option>
 </select> 
 </label>
 <br/>
 <label for="<?php
         echo $this->get_field_id('coloroption');
 ?>">
-Widget Color:
+<?php _e( 'Widget Color:', 'tp_disquscombination'); ?>
 <br/>
 <select id="<?php
         echo $this->get_field_id('coloroption');
@@ -113,30 +113,30 @@ Widget Color:
   <option value="grey" <?php
         if ($instance['coloroption'] == grey)
             echo 'selected="selected"';
-?>>Grey</option>
+?>><?php _e( 'Grey', 'tp_disquscombination'); ?></option>
   <option value="red" <?php
         if ($instance['coloroption'] == red)
             echo 'selected="selected"';
-?>>Red</option>
+?>><?php _e( 'Red', 'tp_disquscombination'); ?></option>
   <option value="green" <?php
         if ($instance['coloroption'] == green)
             echo 'selected="selected"';
-?>>Green</option>
+?>><?php _e( 'Green', 'tp_disquscombination'); ?></option>
   <option value="blue" <?php
         if ($instance['coloroption'] == blue)
             echo 'selected="selected"';
-?>>Blue</option>
+?>><?php _e( 'Blue', 'tp_disquscombination'); ?></option>
   <option value="orange" <?php
         if ($instance['coloroption'] == orange)
             echo 'selected="selected"';
-?>>Orange</option>
+?>><?php _e( 'Orange', 'tp_disquscombination'); ?></option>
 </select> 
 </label>
 <br/>
 <label for="<?php
         echo $this->get_field_id('hideavataroption');
 ?>">
-Hide Avatars:
+<?php _e( 'Hide Avatars:', 'tp_disquscombination'); ?>
 <br/>
 <input type="hidden" name="<?php
         echo $this->get_field_name('hideavataroption');
@@ -154,7 +154,7 @@ name="<?php
 <label for="<?php
         echo $this->get_field_id('hidemodsoption');
 ?>">
-Hide Moderators:
+<?php _e( 'Hide Moderators:', 'tp_disquscombination'); ?>
 <br/>
 <input type="hidden" name="<?php
         echo $this->get_field_name('hidemodsoption');

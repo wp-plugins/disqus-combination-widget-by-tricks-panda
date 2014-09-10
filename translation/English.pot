@@ -1,0 +1,81 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Disqus Combination Widget\n"
+"POT-Creation-Date: 2014-09-11 02:50+0530\n"
+"PO-Revision-Date: 2014-09-11 02:52+0530\n"
+"Last-Translator: Hardeep Asrani\n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.9\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: disqus-combination.php:17
+msgid "Add Disqus combination widget to WordPress sidebar"
+msgstr ""
+
+#: disqus-combination.php:20
+msgid "Disqus Combination Widget"
+msgstr ""
+
+#: disqus-combination.php:36
+msgid "Title:"
+msgstr ""
+
+#: disqus-combination.php:51
+msgid "Disqus Site ID:"
+msgstr ""
+
+#: disqus-combination.php:66
+msgid "Number Of Items:"
+msgstr ""
+
+#: disqus-combination.php:81
+msgid "Default Tab:"
+msgstr ""
+
+#: disqus-combination.php:91
+msgid "People"
+msgstr ""
+
+#: disqus-combination.php:95
+msgid "Recent"
+msgstr ""
+
+#: disqus-combination.php:99
+msgid "Popular"
+msgstr ""
+
+#: disqus-combination.php:106
+msgid "Widget Color:"
+msgstr ""
+
+#: disqus-combination.php:116
+msgid "Grey"
+msgstr ""
+
+#: disqus-combination.php:120
+msgid "Red"
+msgstr ""
+
+#: disqus-combination.php:124
+msgid "Green"
+msgstr ""
+
+#: disqus-combination.php:128
+msgid "Blue"
+msgstr ""
+
+#: disqus-combination.php:132
+msgid "Orange"
+msgstr ""
+
+#: disqus-combination.php:139
+msgid "Hide Avatars:"
+msgstr ""
+
+#: disqus-combination.php:157
+msgid "Hide Moderators:"
+msgstr ""
